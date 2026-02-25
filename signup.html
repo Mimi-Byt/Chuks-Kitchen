@@ -22,25 +22,36 @@
 
                 <div class="right">
                     <div class="right-container">
-                        <div>
-                        <h1>Chuks Kitchen</h1>
-                        <h2>Log in Your Account</h2>
-                    </div>
-                    <div>
+                        <div class="right-header">
+                            <h1>Chuks Kitchen</h1>
+                            <h2>Log in Your Account</h2>
+                        </div>
+
                         <form action="#">
-                            <input type="text" placeholder="Email or phone number" required>
-                            <input type="password" placeholder="Password" required>
+                            <div class="form-group">
+                                <input type="text" id="email" placeholder=" " required>
+                                <label for="email">
+                                    <span class="entypo--mail"></span>Email or phone number
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" placeholder=" " required>
+                                <label for="password">
+                                    <span class="solar--password-bold"></span>Password</label>
+                            </div>
                         </form>
-                    </div>
-                    <div>
-                        <button type="submit">Continue</button>
-                        <p>or continue with</p>
-                    </div>
-                    <div>
-                        <button>Continue with Google</button>
-                        <button>Continue with Apple</button>
-                    </div>
-                    <p>Don't have an account? <a href="#">Create an account</a></p>
+
+                        <div class="right-submit">
+                            <button type="submit">Continue</button>
+                            <p>or continue with</p>
+                        </div>
+                        <div class="right-button">
+                            <button><span class="flat-color-icons--google"></span>Continue with Google</button>
+                            <button><span class="ic--round-apple"></span>Continue with Apple</button>
+                        </div>
+                        <div class="right-footer">
+                            <p>Don't have an account? <a href="#">Create an account</a></p>
+                        </div>
                     </div>
 
                 </div>
