@@ -56,6 +56,16 @@
     opacity: 0.6;
     z-index: -1;
 }
+.left-content h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.left-content p {
+    font-size: 18px;
+    color: #FFFFFF;
+    max-width: 400px;
+}
 .right {
     display: flex;
     align-content: center;
