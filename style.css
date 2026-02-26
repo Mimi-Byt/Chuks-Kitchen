@@ -152,6 +152,7 @@ footer{
     color: var(--footer-text-color);
     display: block;
     margin-top: 0.5rem;
+    font-weight: 200;
 }
 .footer{
     margin-top: 2rem;
@@ -169,6 +170,7 @@ footer{
     color:var(--footer-text-color);
     display: block;
     margin-top: 0.5rem;
+    font-weight: 200;
 }
 .quick-links a:hover{
     color:#87ceeb;}
@@ -187,6 +189,7 @@ footer{
     color: var(--footer-text-color);
     display: block;
     margin-top: 0.5rem;
+    font-weight: 200;
 }
 .social{
     margin-top: 2rem;
@@ -199,6 +202,7 @@ footer{
     margin-right: 1rem;
     display: block;
     margin-top: 0.5rem;
+    font-weight: 200;
 }
 .social a:hover{
     color: skyblue;}
@@ -236,6 +240,7 @@ footer{
   .attribution {
     display: none;
   }
+
 }
 
 /* ── Tablet (≤ 768px) ── */
