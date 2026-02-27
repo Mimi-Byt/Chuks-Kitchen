@@ -103,6 +103,12 @@ h1 {
     margin: 0 auto;
     margin-bottom: 2rem;
 }
+.btn-st a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.btn-st a:hover{color:#FF7A18;}
+
 .btn-st:hover{
     background-color: transparent;
     color: var(--button-color);
@@ -127,12 +133,13 @@ h1 {
     align-items: center;
     justify-content: center;
     color: #888;
-    gap : 10px;
+    gap : 5px;
     margin-bottom: 2rem;
 }
 .right-footer a{
     text-decoration: none;
     color: #87ceeb;
+
 }
 footer{
     background-color: var(--footer-color);
@@ -141,7 +148,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;}
+    padding:  10px;
+  }
     
 .footer-container{
     display: flex;
@@ -159,11 +167,13 @@ footer{
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 15rem;
+    padding:  10px;
 }
 .quick-links{
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 14rem;
+    padding:  10px;
   
 }
 .quick-links a{
@@ -183,6 +193,7 @@ footer{
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 14rem;
+    padding:  10px;
    
 }
 .contact a{
@@ -196,6 +207,7 @@ footer{
     margin-top: 2rem;
     margin-bottom: 2rem;
     max-width: 8rem;
+    padding:  10px;
 }
 .social a{
     text-decoration: none;
@@ -289,12 +301,16 @@ footer{
   }
 
   .footer-container {
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
     
   }
 
   .footer{
-    display: none;
+   display: flex;
+   flex-direction: column;
   }
   .quick-links,
   .contact,
@@ -303,7 +319,8 @@ footer{
   }
 
   .attribution {
-    display: none;
+    display: flex;
+    align-items: flex-start;
   }
 }
 
@@ -359,16 +376,19 @@ footer{
   }
 
   .right-footer {
-   display: none;
+   display: flex;
+   flex-direction: column;
   }
 
   /* Footer — single column */
   .footer-container {
     display: flex;
+    flex-direction: column;
   }
 
   .footer{
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
   .quick-links,
   .contact,
@@ -379,6 +399,8 @@ footer{
 
   .attribution {
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
@@ -411,6 +433,10 @@ footer{
     font-size: 14px;
     border-radius: 8px;
   }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
 
 /* ── Minimum supported width (≤ 320px) ── */
@@ -442,10 +468,13 @@ footer{
   }
 
   .footer-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .attribution {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
