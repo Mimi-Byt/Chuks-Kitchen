@@ -51,6 +51,60 @@ header {
     gap: 10rem;
 }
 
+.nav-menu-container {
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-toggle:hover {
+    background-color: #e0601a;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        display: none;
+        min-width: 200px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+}
+
 .nav-item {
     margin: 0;
 }
@@ -64,6 +118,20 @@ header {
 
 .nav-link:hover {
     color: var(--button-color);
+}
+
+.btn-login-menu {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login-menu:hover {
+    background-color: #e0601a;
 }
 
 .btn-login {

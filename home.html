@@ -19,21 +19,26 @@
             <div class="navbar-logo">
                 <h1>Chuks Kitchen</h1>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Explore</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">My Orders</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Account</a>
-                </li>
-            </ul>
-            <button class="btn-login"><a href="./login.html">Login</a></button>
+            <div class="nav-menu-container">
+                <button class="nav-toggle" id="navToggle">☰ Menu</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">My Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link btn-login-menu">Login</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <section class="hero-section">
@@ -161,6 +166,22 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 
